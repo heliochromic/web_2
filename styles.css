@@ -11,32 +11,27 @@ header{
 
 section {
     display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
 }
 
 .container {
     height: 100px;
-    margin: 5px;
+    margin: 10px;
 }
 
 #left {
-    flex: 1 1 auto; /* Grow and shrink as needed, fill remaining space *//* Allow the div to grow and take available space */
+    flex-grow: 1; /* Allow the div to grow and take available space */
     background-color: brown;
 }
 
 #right {
-    flex: 0 0 300px; /* Prevent the div from shrinking */
+    width: 300px; /* Prevent the div from shrinking */
     background-color: aqua;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     section {
       flex-direction: column;
     }
 
-    #right, #left {
-        width: 100%;
-    }
-
+    
   }
