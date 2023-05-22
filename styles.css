@@ -28,10 +28,13 @@ section {
     background-color: aqua;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     section {
       flex-direction: column;
     }
 
-    
+    #right {
+        width: inherit;
+    }
+
   }
